@@ -183,23 +183,55 @@ incident.analyzed (Kafka Topic)
 ```
 
 ---
+Here is the streamlined, Windows-only version of your setup and startup guide for the `README.md`:
 
-### 7. How to Start the Service
+---
 
-#### Option A: Windows (PowerShell)
+### 🚀 Setup and Running Instructions (Windows)
+
+#### 1. Create and Activate the Virtual Environment
 
 
- Windows (CMD)
+
+
+* **Command Prompt (CMD):**
+```cmd
+python -m venv .venv
+.venv\Scripts\activate.bat
+
+```
+
+
+
+#### 2. Install Dependencies
+
+```cmd
+pip install --upgrade pip
+pip install -r requirements.txt
+
+```
+
+#### 3. Start the Application Service
+
+
+
+
 ```cmd
 .venv\Scripts\uvicorn app.main:app --reload --port 8000
-```
 
 ```
 
- Docker Container of kafka
-```
+
+
+#### 4. Run Apache Kafka (Docker)
+
+If your platform requires event streaming, spin up a local Kafka instance using Docker:
+
+```cmd
 docker run -d -p 9092:9092 --name my-kafka apache/kafka:latest
+
 ```
+
 ---
 
 ### 8. REST API Endpoints
