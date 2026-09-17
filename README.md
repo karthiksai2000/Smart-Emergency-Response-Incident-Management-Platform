@@ -187,7 +187,7 @@ Here is the streamlined, Windows-only version of your setup and startup guide fo
 
 ---
 
-### 🚀 Setup and Running Instructions (Windows)
+### 7 🚀 Setup and Running Instructions (Windows)
 
 #### 1. Create and Activate the Virtual Environment
 
